@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HITMS Sports Society — Elevating Performance Through Sports Excellence.">
+  <title>HITMS Sports Society | Elevating Performance Through Sports Excellence</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-logo">
+    <img src="assets/images/logo.png" alt="Logo" class="preloader-logo-img">
+    <span>SPORTS SOCIETY HITMS</span>
+  </div>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#hero" onclick="closeMobileNav()">Home</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#objectives" onclick="closeMobileNav()">Objectives</a>
+  <a href="#why-sports" onclick="closeMobileNav()">Why Sports</a>
+  <a href="#focal" onclick="closeMobileNav()">Leadership</a>
+  <a href="#team" onclick="closeMobileNav()">Team</a>
+  <a href="#highlights" onclick="closeMobileNav()">Highlights</a>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/images/logo.png" alt="HITMS Sports Society Logo">
+    <span>SPORTS SOCIETY HITMS</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#why-sports">Why Sports</a></li>
+    <li><a href="#focal">Leadership</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+  </ul>
+  <a href="#join" class="nav-cta">Join Us</a>
+  <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="assets/images/hero-bg.png" alt="Sports Arena"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap reveal"><img src="assets/images/logo.png" alt="Sports Society HITMS" class="hero-logo-img"></div>
+    <span class="hero-badge reveal">⚡ Inauguration Ceremony</span>
+    <h1 class="reveal">SPORTS SOCIETY <span class="accent">HITMS</span></h1>
+    <p class="hero-subtitle reveal">Elevating Performance Through Sports Excellence</p>
+    <p class="hero-tagline reveal">Empowering Health, Discipline, and Teamwork</p>
+    <div class="hero-buttons reveal">
+      <a href="#team" class="btn-primary">Explore Team</a>
+      <a href="#highlights" class="btn-outline">View Highlights</a>
+      <a href="#join" class="btn-outline">Join The Movement</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-header">
+    <span class="section-tag reveal">Who We Are</span>
+    <h2 class="section-title reveal">About <span class="text-accent">HITMS</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-image reveal-left"><img src="assets/images/hitms-building.png" alt="HITMS Academic Block"></div>
+    <div class="about-text reveal-right">
+      <h3>Hyderabad Institute for Technology and Management Sciences</h3>
+      <p>HITMS stands as one of the region's most prestigious and progressive institutes — committed to academic excellence, innovation, and the holistic development of its students.</p>
+      <p>The Sports Society HITMS was established to foster a culture of sports and physical wellness, creating an active and energetic campus environment where students can thrive both academically and athletically.</p>
+      <div class="about-stats">
+        <div class="stat-item reveal-scale"><span class="stat-number counter" data-target="10">0</span><span class="stat-label">Core Members</span></div>
+        <div class="stat-item reveal-scale"><span class="stat-number counter" data-target="3">0</span><span class="stat-label">Upcoming Events</span></div>
+        <div class="stat-item reveal-scale"><span class="stat-number">1st</span><span class="stat-label">Sports Week</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- UNLEASHING -->
+<section class="section unleash-section" id="unleash">
+  <div class="unleash-bg"><img src="assets/images/hero-bg.png" alt="Unleashing the Potential"></div>
+  <div class="unleash-overlay"></div>
+  <div class="unleash-content">
+    <h2 class="reveal">UNLEASHING THE POTENTIAL</h2>
+    <div class="unleash-logo reveal"><img src="assets/images/logo.png" alt="Sports Society HITMS Logo"></div>
+    <p class="unleash-tagline reveal">THE POWER HAS ARRIVED.</p>
+    <p class="unleash-sub reveal">INAUGURATING HITMS SPORTS SOCIETY</p>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="section" id="objectives">
+  <div class="section-header">
+    <span class="section-tag reveal">Our Goals</span>
+    <h2 class="section-title reveal">Our Key <span class="text-accent">Objectives</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="objectives-grid">
+    <div class="objective-card reveal" style="transition-delay:0.1s"><div class="obj-number">01</div><span class="obj-badge">01</span><h3>Promote Lifelong Physical Activity</h3><p>Encourage regular sports participation and physical fitness among all students for a healthier lifestyle.</p></div>
+    <div class="objective-card reveal" style="transition-delay:0.2s"><div class="obj-number">02</div><span class="obj-badge">02</span><h3>Encourage Teamwork and Leadership</h3><p>Build future leaders through sports management, team captaincy, and collaborative athletic experiences.</p></div>
+    <div class="objective-card reveal" style="transition-delay:0.3s"><div class="obj-number">03</div><span class="obj-badge">03</span><h3>Build a Foundation for Mental Well-being</h3><p>Use sports as a tool for stress relief and mental health support, helping students manage academic pressure.</p></div>
+    <div class="objective-card reveal" style="transition-delay:0.4s"><div class="obj-number">04</div><span class="obj-badge">04</span><h3>Develop Competitive and Ethical Spirit</h3><p>Instill values of fair play, sportsmanship, and ethical competition in every event and activity.</p></div>
+  </div>
+</section>
+
+<!-- WHY SPORTS -->
+<section class="section" id="why-sports">
+  <div class="section-header">
+    <span class="section-tag reveal">The Power of Sports</span>
+    <h2 class="section-title reveal">Why Sports Matter at <span class="text-accent">HITMS</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal" style="transition-delay:0.1s"><div class="why-icon">🧠</div><h3>Mental Strength</h3><p>Sports train the mind to stay focused under pressure — shaping sharper engineers, managers and leaders ready for real-world challenges.</p></div>
+    <div class="why-card reveal" style="transition-delay:0.2s"><div class="why-icon">🤝</div><h3>Team Spirit &amp; Unity</h3><p>On the field there are no departments — only teammates. Sports break barriers and forge lifelong bonds across the campus.</p></div>
+    <div class="why-card reveal" style="transition-delay:0.3s"><div class="why-icon">💪</div><h3>Physical &amp; Mental Wellbeing</h3><p>Regular activity reduces stress, boosts energy, and keeps students performing at their peak — academically and personally.</p></div>
+    <div class="why-card reveal" style="transition-delay:0.4s"><div class="why-icon">🏆</div><h3>Representing HITMS with Pride</h3><p>A vibrant sports culture puts HITMS on the inter-university map — trophies, recognition, and national reputation follow.</p></div>
+  </div>
+</section>
+
+<!-- FOCAL PERSON -->
+<section class="section focal-section" id="focal">
+  <div class="focal-bg"><img src="assets/images/hero-bg.png" alt="Leadership Background"></div>
+  <div class="focal-overlay"></div>
+  <div class="focal-content">
+    <div class="focal-image reveal-left"><img src="assets/images/muhib-focal-cropped.png" alt="Muhib Aleem - Focal Person"></div>
+    <div class="focal-info reveal-right">
+      <span class="focal-tag">⭐ Focal Person</span>
+      <h2>Muhib Aleem</h2>
+      <p class="focal-role">Focal Person — HITMS Sports Society</p>
+      <blockquote class="focal-quote">"As the Focal Person of the Sports Society, my aim is to encourage teamwork, discipline, and a healthy competitive spirit among students. Through different sports activities and events, we strive to create an active and energetic environment at HITMS."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MEET THE SQUAD ========== -->
+<section class="section" id="team">
+  <div class="section-header">
+    <span class="section-tag reveal">The Driving Force Behind HITMS Sports Society</span>
+    <h2 class="section-title reveal">Meet The Squad Of <span class="text-accent">Sports Society HITMS</span> 🏆</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- PRESIDENT -->
+  <div class="leader-spotlight reveal">
+    <div class="leader-card">
+      <div class="leader-img">
+        <img src="assets/images/usaid-ahmed-cropped.png" alt="Usaid Ahmed - President">
+        <div class="leader-crown">👑</div>
+      </div>
+      <div class="leader-info">
+        <span class="leader-tag">⭐ President ⭐</span>
+        <h3>Usaid Ahmed</h3>
+        <p class="leader-role">HITMS Sports Society</p>
+        <p class="leader-one-liner">Visionary leader uniting the campus through the universal language of sport.</p>
+        <blockquote class="leader-quote">"As the President of the Sports Society, my goal is to bring students together through sports, promote talent, and create opportunities for participation, teamwork, and leadership. We aim to make every event engaging, energetic, and memorable for the HITMS community."</blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 1: VP + General Secretary -->
+  <div class="team-row-label reveal"><span>Leadership Core</span></div>
+  <div class="team-duo-centered team-duo-wide">
+    <div class="trio-card duo-card reveal" style="transition-delay:0.1s">
+      <div class="trio-img-wrap"><img src="assets/images/asjad-khan.png" alt="Asjad Khan"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Asjad Khan</h3><span class="trio-role">Vice President</span><p class="trio-line">The strategic backbone keeping every initiative on track.</p></div>
+    </div>
+    <div class="trio-card duo-card reveal" style="transition-delay:0.2s">
+      <div class="trio-img-wrap"><img src="assets/images/abdul-rafay.png" alt="Abdul Rafay"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Abdul Rafay</h3><span class="trio-role">General Secretary</span><p class="trio-line">The organized mind behind every smooth operation.</p></div>
+    </div>
+  </div>
+
+  <!-- ROW 2: Sports Secretary (×2) + Operational Head -->
+  <div class="team-row-label reveal" style="transition-delay:0.1s"><span>Sports &amp; Operations</span></div>
+  <div class="team-trio">
+    <div class="trio-card reveal" style="transition-delay:0.1s">
+      <div class="trio-img-wrap"><img src="assets/images/muheeb.png" alt="Muheeb"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Muheeb</h3><span class="trio-role">Sports Secretary</span><p class="trio-line">Fuelling athletic energy and coordinating every event on the field.</p></div>
+    </div>
+    <div class="trio-card reveal" style="transition-delay:0.2s">
+      <div class="trio-img-wrap"><img src="assets/images/hassan-farooqui.png" alt="Hassan Farooqui"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Hassan Farooqui</h3><span class="trio-role">Sports Secretary</span><p class="trio-line">Driving sports culture with passion and relentless dedication.</p></div>
+    </div>
+    <div class="trio-card reveal" style="transition-delay:0.3s">
+      <div class="trio-img-wrap"><img src="assets/images/uzair-khan.png" alt="Uzair Khan"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Uzair Khan</h3><span class="trio-role">Operational Head</span><p class="trio-line">Mastermind of ground execution and event infrastructure.</p></div>
+    </div>
+  </div>
+
+  <!-- ROW 3: Management Head (×2) + Social Media Manager -->
+  <div class="team-row-label reveal" style="transition-delay:0.1s"><span>Management &amp; Digital</span></div>
+  <div class="team-trio">
+    <div class="trio-card reveal" style="transition-delay:0.1s">
+      <div class="trio-img-wrap"><img src="assets/images/aliza.png" alt="Aliza"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Aliza</h3><span class="trio-role">Management Head</span><p class="trio-line">Steering logistics with precision and calm leadership.</p></div>
+    </div>
+    <div class="trio-card reveal" style="transition-delay:0.2s">
+      <div class="trio-img-wrap"><img src="assets/images/raziullah.png" alt="Raziullah"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Raziullah</h3><span class="trio-role">Management Head</span><p class="trio-line">Ensuring every event runs flawlessly from start to finish.</p></div>
+    </div>
+    <div class="trio-card reveal" style="transition-delay:0.3s">
+      <div class="trio-img-wrap trio-img-face"><img src="assets/images/abdulwahab.png" alt="Abdul Wahab"><div class="trio-overlay"></div></div>
+      <div class="trio-info"><h3>Abdul Wahab</h3><span class="trio-role">Social Media Manager</span><p class="trio-line">Amplifying the HITMS Sports Society voice across every platform.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HIGHLIGHTS ========== -->
+<section class="section highlights-section" id="highlights">
+  <div class="highlights-bg-deco"></div>
+
+  <div class="section-header">
+    <span class="section-tag reveal">🏆 Inauguration Ceremony</span>
+    <h2 class="section-title reveal">Highlights of the <span class="text-accent">1st Sports Week</span></h2>
+    <div class="section-line"></div>
+    <p class="section-subtitle reveal" style="margin-top:1rem;">A landmark chapter in HITMS history — energy, passion, and community on full display.</p>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="hl-divider reveal">
+    <div class="hl-divider-line"></div>
+    <span class="hl-divider-text">📸 Event Gallery</span>
+    <div class="hl-divider-line"></div>
+  </div>
+
+  <!-- MASONRY GALLERY -->
+  <div class="hl-masonry">
+
+    <div class="hl-cell hl-cell-wide reveal" style="transition-delay:0.05s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight.png" alt="Opening Ceremony">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>✦ Opening Ceremony</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.1s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight1.png" alt="The Squad Assembles">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>The Squad Assembles</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.15s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight3.png" alt="Sports in Action">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>Sports in Action</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.2s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight4.png" alt="Team Spirit">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>Team Spirit</span></div>
+    </div>
+
+    <div class="hl-cell hl-cell-tall reveal" style="transition-delay:0.25s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight5.png" alt="Celebration">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>✦ Celebration</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.3s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight6.png" alt="Winning Moments">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>Winning Moments</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.35s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight7.png" alt="Unity on Display">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>Unity on Display</span></div>
+    </div>
+
+    <div class="hl-cell reveal" style="transition-delay:0.4s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight8.png" alt="Game On">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>Game On</span></div>
+    </div>
+
+    <div class="hl-cell hl-cell-wide reveal" style="transition-delay:0.45s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight9.png" alt="The Grand Finale">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>✦ The Grand Finale</span></div>
+    </div>
+
+    <div class="hl-cell hl-cell-full reveal" style="transition-delay:0.5s" onclick="openLightbox(this)">
+      <img src="assets/images/highlight10.png" alt="The Full Picture">
+      <div class="hl-cell-overlay"></div>
+      <div class="hl-cell-label"><span>✦ The Full Picture</span></div>
+    </div>
+
+
+
+  </div>
+
+  <div class="moments-title reveal">
+    <h3>Moments That Define Us</h3>
+    <p>Every frame tells a story of passion, unity, and sporting excellence at HITMS. This is just the beginning.</p>
+  </div>
+</section>
+
+
+<!-- ========== MEGA SPORTS WEEK II HYPE ========== -->
+<section class="sports-week2-section" id="sportsweek2">
+  <div class="sw2-bg"><img src="assets/images/hero-bg.png" alt="Sports Week 2"></div>
+  <div class="sw2-overlay"></div>
+  <div class="sw2-particles" id="sw2Particles"></div>
+  <div class="sw2-content">
+    <div class="sw2-eyebrow reveal">🔥 &nbsp; BRACE YOURSELVES &nbsp; 🔥</div>
+    <h2 class="sw2-title reveal">MEGA SPORTS WEEK <em>II</em></h2>
+    <div class="sw2-divider reveal"></div>
+    <p class="sw2-month reveal">COMING THIS OCTOBER 2026</p>
+    <p class="sw2-desc reveal">
+      The curtain call was just the warm-up.<br>
+      <strong>Sports Week II</strong> is arriving bigger, bolder, and more electric than ever before — more events, more teams, more glory, and one unforgettable spectacle that will put HITMS on every athlete's radar.
+    </p>
+    <div class="sw2-features reveal">
+      <div class="sw2-feat"><span class="sw2-feat-icon">⚡</span><span>Bigger Scale</span></div>
+      <div class="sw2-feat"><span class="sw2-feat-icon">🏆</span><span>More Trophies</span></div>
+      <div class="sw2-feat"><span class="sw2-feat-icon">🎯</span><span>More Sports</span></div>
+      <div class="sw2-feat"><span class="sw2-feat-icon">🔥</span><span>Unforgettable</span></div>
+    </div>
+    <div class="sw2-cta-wrap reveal">
+      <p class="sw2-cta-question">ARE YOU READY?</p>
+      <a href="#join" class="sw2-btn">Stay Updated →</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP APPRECIATION -->
+<section class="section appreciation-section" id="appreciation">
+  <div class="section-header">
+    <span class="section-tag reveal">With Respect &amp; Recognition</span>
+    <h2 class="section-title reveal">Guiding <span class="text-accent">Support</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="appreciation-panel reveal">
+    <div class="appreciation-grid">
+      <div class="appreciation-card">
+        <span class="appreciation-tag">🎖️ Director of Student Affairs</span>
+        <div class="appreciation-img"><img src="assets/images/rashid-ali-rao.jpeg" alt="Sir Rashid Ali Rao - Director Student Affairs"></div>
+        <h3>Sir Rashid Ali Rao</h3>
+        <p class="appreciation-role">HITMS</p>
+      </div>
+      <div class="appreciation-divider"><span>&amp;</span></div>
+      <div class="appreciation-card">
+        <span class="appreciation-tag">🏛️ Institute Leadership</span>
+        <div class="appreciation-img"><img src="assets/images/rector-registrar.jpeg" alt="Rector and Registrar - HITMS"></div>
+        <h3>Rector &amp; Registrar</h3>
+        <p class="appreciation-role">HITMS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRATITUDE -->
+<section class="section" id="gratitude">
+  <div class="section-header">
+    <span class="section-tag reveal">With Heartfelt Gratitude</span>
+    <h2 class="section-title reveal">Gratitude &amp; <span class="text-accent">Appreciation</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="gratitude-content reveal">
+    <div class="gratitude-card"><h3>Rector &amp; Registrar — HITMS</h3><p>For their support in making the first-ever HITMS Sports Gala a reality.</p></div>
+    <div class="gratitude-card"><h3>Sir Rashid Ali Rao</h3><p>Director of Student Affairs — whose hard work made this event a great success.</p></div>
+    <div class="gratitude-card"><h3>Sir Muhib Aleem</h3><p>Focal Person — for invaluable guidance &amp; unwavering support.</p></div>
+  </div>
+  <div class="gratitude-full reveal">
+    <p>We would like to express our sincere gratitude to the Rector and Registrar of HITMS for their support and encouragement in making the first-ever HITMS Sports Gala possible. Special thanks to Sir Rashid Ali Rao, Director of Student Affairs, whose dedicated efforts and hard work behind the scenes made this wonderful event a great success.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="join">
+  <div class="final-cta-inner">
+    <h2 class="reveal">10 Passionate Athletes.<br><span class="text-accent">One Unstoppable Vision.</span></h2>
+    <p class="reveal">Elevating Performance Through Sports Excellence</p>
+    <div class="reveal"><a href="#hero" class="btn-primary btn-large" style="background:var(--gold);color:var(--primary)">Join HITMS Sports Society</a></div>
+  </div>
+</section>
+
+<!-- THANK YOU -->
+<section class="thankyou-section">
+  <div class="thankyou-deco"></div>
+  <span class="thankyou-icon reveal">🏆</span>
+  <h2 class="reveal">THANK YOU</h2>
+  <div class="thankyou-line reveal"></div>
+  <p class="reveal">For your support</p>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="assets/images/logo.png" alt="HITMS Sports Society"><span>Sports Society HITMS</span></div>
+    <p>&copy; 2026 Sports Society HITMS — Hyderabad Institute for Technology and Management Sciences. All Rights Reserved.</p>
+    <p class="footer-tagline">Elevating Performance Through Sports Excellence</p>
+  </div>
+</footer>
+
+<!-- SCROLL UP / DOWN CONTROLS -->
+<div class="scroll-controls" id="scrollControls">
+  <button class="scroll-btn scroll-btn-up" id="scrollUpBtn" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+  <button class="scroll-btn scroll-btn-down" id="scrollDownBtn" onclick="scrollToBottom()" aria-label="Scroll to bottom">↓</button>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img src="" alt="Gallery Image" id="lightboxImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
